@@ -1,0 +1,169 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  
+  background-color: hsl(233, 47%, 7%)
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+h1{
+  letter-spacing: 1px;
+  color:hsl(0, 0%, 100%);
+  margin-top: 25px;
+  
+}
+span{
+  color:  hsl(277, 64%, 61%)
+}
+#image{
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  opacity: 40%;
+  filter: sepia(.7) hue-rotate(-130deg) saturate(9.4);       
+}
+#right{
+  padding: 0;
+  margin: 0;
+}
+#left{
+  background-color:  hsl(244, 38%, 16%);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 50px;
+}
+#insideleft{
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-right: 90px;
+}
+#threecolumns{
+   
+   height: 38px;
+   margin-top: 60px;
+   color:hsl(0, 0%, 100%);
+  
+}
+.insidethree{
+  
+  height: 20px;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color:hsl(0, 0%, 100%);
+    
+}
+.insidethree2{
+  
+   height: 20px;
+   font-size: 12px;
+   font-weight: 100;
+   letter-spacing: 1.2px;
+   color: hsla(0, 0%, 100%, 0.6); 
+     
+}
+
+@media(max-width:1400px){
+  h1{
+    font-size: 30px;
+  }
+  #threecolumns{
+    margin-top: 40px;
+  }
+  #left{
+    padding: 30px;
+  }
+}
+@media(max-width:1200px){
+  h1{
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  #threecolumns{
+    margin-top: 25px;
+  }
+  #left{
+    padding: 20px;
+  }
+  #insideleft{
+    padding-right: 50px;
+    margin-top: 20px;
+  }
+}
+
+@media(max-width:993px){
+  h1{
+    font-size: 20px;
+    margin-top: 12px;
+  }
+  #threecolumns{
+    margin-top: 20px;
+    font-size: 20px;
+    height:30px;
+  }
+  #left{
+    padding: 17px;
+  }
+  #insideleft{
+    padding-right: 0px;
+    font-size:12px;
+  }
+}
+
+@media(max-width:768px){
+      #one{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      #right{
+        width: 100%;
+        
+      }
+      #image{
+        border-bottom-right-radius:0%;
+        border-top-left-radius: 12px;
+      }
+      #left{
+        width: 100%;
+        border-top-left-radius: 0%;
+        border-bottom-right-radius: 12px;
+        padding-bottom: 50px;
+      }
+      
+}
+@media (max-width: 420px) {
+      .columns{
+        width: 100%;
+        text-align: center;
+      }
+      #left{
+        padding-bottom: 200px;
+      }
+      #insideleft{
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+      }
+}
+
+
+.attribution {
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
